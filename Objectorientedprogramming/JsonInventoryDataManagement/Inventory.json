@@ -1,0 +1,34 @@
+{
+   "Rice":{
+           "Basmati":{
+           "price":70,
+           "weight":50
+           },
+           "Kohinoor":{
+               "price":60,
+               "weight":40
+           }
+       },
+
+       "Wheat":{
+         "Aashirwad":{
+             "price":40,
+             "weight":90
+             },
+         "Dawat":{
+             "price":45,
+             "weight":80
+         }    
+   },    
+   "Pulses":{
+               "ChanaDal":{
+                   "price":130,
+                   "weight":20
+                   },
+               "MoongDal":{
+                   "price":120,
+                   "weight":15
+               }    
+       }
+   
+} 
