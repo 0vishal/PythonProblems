@@ -1,0 +1,18 @@
+{
+    "Reliance":{
+        "Numberofshares":500,
+        "shareprice":1500
+    },
+    "TCS":{
+        "Numberofshares":300,
+        "shareprice":1300
+    },
+    "Infy":{
+        "Numberofshares":250,
+        "shareprice":700
+    },
+    "HDFC":{
+        "Numberofshares":400,
+        "shareprice":1400
+    }
+}
