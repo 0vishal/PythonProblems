@@ -7,6 +7,10 @@
 '''
 
 def check():
+    """
+    Description:
+    Function description : To find if file exists or not
+    """
     try:
         f = open("Vishal.txt")
         print(f.read())
