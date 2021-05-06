@@ -13,8 +13,11 @@ def display():
     Description:
     Function description :To access the environment variables
     """
-    yy = int(input("Enter year: "))
-    mm = int(input("Enter month: "))
+    try:
+        yy = int(input("Enter year: "))
+        mm = int(input("Enter month: "))
+    except Exception as e:
+        print(e)    
     print(calendar.month(yy,mm))
 
 display()    
