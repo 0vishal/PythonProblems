@@ -12,8 +12,11 @@ def get_username():
     Description:
     Function description :To get the current username 
     """
-    username = getpass.getuser()
-    print(username)
+    try:
+        username = getpass.getuser()
+        print(username)
+    except Exception as e:
+        print('Error Occured : ', e)
 
 get_username()
 
