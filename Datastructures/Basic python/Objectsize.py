@@ -14,9 +14,9 @@ def object_size():
     Function description : To print and take the size of object
     """
     try: 
-        import sys
         x = 2
         print(sys.getsizeof(x))
+        print(sys.getrecursionlimit())
     except NameError as e:
         print(e)    
 
