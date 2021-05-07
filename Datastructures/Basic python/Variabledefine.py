@@ -8,7 +8,7 @@
 def variable_define():
     """
     Description:
-    Function description : To get numbers divisible by 15
+    Function description : To check a variable is defined or not  
     """   
     try:
         x 
