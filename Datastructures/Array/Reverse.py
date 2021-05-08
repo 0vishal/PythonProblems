@@ -5,7 +5,7 @@
 @Last Modified time: 2021-05-08
 @Title :  To  print the values of array in reverse order
 '''
-def print_array():
+def reverse():
     """
     Description:
     Function description :  To  print the values of array in reverse order
@@ -15,4 +15,4 @@ def print_array():
     print(data)
     
 
-print_array()    
+reverse()    
