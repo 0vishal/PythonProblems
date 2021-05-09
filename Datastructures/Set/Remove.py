@@ -6,7 +6,7 @@
 @Title :  program to remove from set
 '''
 
-def add():
+def remove():
     """
     Description:
     Function description : program to remove from set  
@@ -17,4 +17,4 @@ def add():
     for i in data:
         print(i)
 
-add()
+remove()
