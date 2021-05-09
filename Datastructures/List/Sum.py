@@ -6,7 +6,7 @@
 @Title : To program to sum all the items in a list.
 '''
 
-def Sum():
+def sum():
     """
     Description:
     Function description : To program to sum all the items in a list.
@@ -18,4 +18,4 @@ def Sum():
     print(sum)    
 
 
-Sum()
+sum()
