@@ -13,7 +13,6 @@ def get_length():
     """
     data = "Welcome"
     frequency = {}
-    print(len(data))
     for i in data: 
         if i in frequency:
             frequency[i] += 1
