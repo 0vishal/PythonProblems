@@ -6,6 +6,9 @@
 @Title :  program to create user registration form with regex and logger
 '''
 import re
+import logging
+
+logging.basicConfig(filename='logging.log',level=logging.INFO,format='%(levelname)s : %(asctime)s: %(message)s')
 
 class main():
     """
@@ -20,6 +23,7 @@ class main():
                 return "valid username"
             else:    
                 return "invalid username"
+                
         
     def validate_password(self,password):
             regex_password = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$"
@@ -44,19 +48,34 @@ class main():
 if __name__ == '__main__':
     try:
         user_name = input("Enter the first name:  ")
-        print(main().validate_username(user_name))
-        
+        logging.info("username successfully created {}".format(user_name))
+    except ValueError as error:
+        print(error)
+        print("Wrong input") 
+    user_name_validation = main().validate_username(user_name)    
+    print(user_name_validation)
+
+    try:    
         print("\n")
         password = input("Enter the password:  ")
-        print(main().validate_password(password))
-        
-        print("\n")
-        email = input("Enter the email id:  ")
-        print(main().validate_email(email))
-        
-        print("\n")
-        print("User Details : ", user_name, password, email)
+        logging.info("password successfully created for {}".format(user_name))
+    except ValueError as error:
+        print(error)
+        print("Wrong input")
+    password_validation = main().validate_password(password)  
+    print(password_validation)
 
-    except ValueError as e:
-        print("Enter correct input",e)
+    try: 
+        print("\n")   
+        email = input("Enter the email id:  ")
+        logging.info("Email id successfully created for {}".format(user_name))
+    except ValueError as error:
+        print(error)
+        print("Wrong input")  
+    email_validation = main().validate_email(email)    
+    print(email_validation)
+        
+    print("\n")
+    print("User Details : ", user_name, password, email)
+
  
