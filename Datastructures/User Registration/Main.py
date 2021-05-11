@@ -31,8 +31,6 @@ class main():
                 return "invalid password"
 
 
-
-
     def validate_email(self,email):
             regex_email = "[A-za-z0-9.-]+@[a-zA-z]+\.com"
             pattern3 = re.compile(regex_email)
@@ -43,26 +41,19 @@ class main():
                     return "Invalid emailid"
 
     
-  
-  
-# Driver Code     
 if __name__ == '__main__':
     try:
         user_name = input("Enter the first name:  ")
         print(main().validate_username(user_name))
         
-
         print("\n")
         password = input("Enter the password:  ")
         print(main().validate_password(password))
         
-
-
         print("\n")
         email = input("Enter the email id:  ")
         print(main().validate_email(email))
         
-
         print("\n")
         print("User Details : ", user_name, password, email)
 
